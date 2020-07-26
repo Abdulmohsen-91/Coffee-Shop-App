@@ -140,7 +140,7 @@ def patch_drink(jwt, id):
 
         return jsonify({
             'success': True,
-            'drinks': drink.long()
+            'drinks': [drink.long()]
         })
     except:
         abort(422)
